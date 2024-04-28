@@ -10,6 +10,10 @@ Only using Python, this software will take a user's input and create a strong, u
 
 ## Version History 
 
+**Version 0.2**  
+*4/28/2024*  
+* Added ranges of possible characters that could be used for random password.
+
 **Version 0.1**  
 *4/27/2024*  
 * This program has just been started.

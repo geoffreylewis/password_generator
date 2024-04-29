@@ -10,6 +10,12 @@ Only using Python, this software will take a user's input and create a strong, u
 
 ## Version History 
 
+**Version 0.3**  
+*4/29/2024*  
+* Activated the clarifying questions with the input() function as well as the int() function.
+* Created an empty list to hold the password characters.
+* Created for loops that generate the random characters that will be used in the password.
+
 **Version 0.2**  
 *4/28/2024*  
 * Added ranges of possible characters that could be used for random password.

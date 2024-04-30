@@ -14,40 +14,39 @@ possible_lowercase_letters = "a b c d e f g h i j k l m n o p q r s t u v w x y 
 possible_symbols = "~ ! @ # $ % ^ & * ( ) - =".split()
 possible_numbers = "1 2 3 4 5 6 7 8 9 0".split()
 
-# print(possible_uppercase_letters)
-# print(possible_lowercase_letters)
-# print(possible_symbols)
-# print(possible_numbers)
-
 # Clarifying Questions
 number_of_uppercase = int(input("How many uppercase letters would you like in your password? \n"))
+print()
 number_of_lowercase = int(input("How many lowercase letters would you like in your password? \n"))
+print()
 number_of_symbols = int(input("How many symbols would you like? \n"))
+print()
 number_of_numbers = int(input("How many numbers would you like? \n"))
+print()
 
 # The (currently) empty list that will store the eventual password characters.
 password_list = []
 
 # Below are the for loops to generate random characters.
 for upper in range(0, number_of_uppercase):
-    uppercase_choices = random.choice(possible_uppercase_letters)
-    password_list.append(uppercase_choices)
+    password_list.append(random.choice(possible_uppercase_letters))
 
 for lower in range(0, number_of_lowercase):
-    lowercase_choices = random.choice(possible_lowercase_letters)
-    password_list.append(lowercase_choices)
+    password_list.append(random.choice(possible_lowercase_letters))
 
 for symbol in range(0, number_of_symbols):
-    symbol_choices = random.choice(possible_symbols)
-    password_list.append(symbol_choices)
+    password_list.append(random.choice(possible_symbols))
 
 for number in range(0, number_of_numbers):
-    number_choices = random.choice(possible_numbers)
-    password_list.append(number_choices)
+    password_list.append(random.choice(possible_numbers))
 
-# Temporarily printing the (now) full list of password characters.
-print(password_list)
-print()
+# Shuffling the list of password characters.
+random.shuffle(password_list)
 
-# Generate Password
-print("Here is your password: ")
+# Putting the list of password characters into one long string.
+randomly_generated_password = ""
+for character in password_list:
+    randomly_generated_password += character
+
+# Finally display the randomly generated password.
+print(f"Here is your randomly generated password: {randomly_generated_password}")

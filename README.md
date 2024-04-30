@@ -10,6 +10,14 @@ Only using Python, this software will take a user's input and create a strong, u
 
 ## Version History 
 
+**Version 0.4**  
+*4/30/2024*  
+* Cleaned up for loops that are for the random characters.
+* Spaced out the clarifying questions.
+* Added shuffling functionality to the password list once characters have been selected.
+* Created an empty string and an additional for loop that finally create the password.
+* Password can be generated now, but still need to add some if/else statements for min/max limits.
+
 **Version 0.3**  
 *4/29/2024*  
 * Activated the clarifying questions with the input() function as well as the int() function.

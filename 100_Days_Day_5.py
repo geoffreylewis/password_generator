@@ -16,12 +16,28 @@ possible_numbers = "1 2 3 4 5 6 7 8 9 0".split()
 
 # Clarifying Questions
 number_of_uppercase = int(input("How many uppercase letters would you like in your password? \n"))
+if number_of_uppercase < 3 or number_of_uppercase > 6:
+    print()
+    print("You don't follow instructions well, do you?  No password for you then.")
+    exit()
 print()
 number_of_lowercase = int(input("How many lowercase letters would you like in your password? \n"))
+if number_of_lowercase < 3 or number_of_lowercase > 6:
+    print()
+    print("You don't follow instructions well, do you?  No password for you then.")
+    exit()
 print()
 number_of_symbols = int(input("How many symbols would you like? \n"))
+if number_of_symbols < 3 or number_of_symbols > 6:
+    print()
+    print("You don't follow instructions well, do you?  No password for you then.")
+    exit()
 print()
 number_of_numbers = int(input("How many numbers would you like? \n"))
+if number_of_numbers < 3 or number_of_numbers > 6:
+    print()
+    print("You don't follow instructions well, do you?  No password for you then.")
+    exit()
 print()
 
 # The (currently) empty list that will store the eventual password characters.

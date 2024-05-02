@@ -10,6 +10,11 @@ Only using Python, this software will take a user's input and create a strong, u
 
 ## Version History 
 
+**Version 1.0**  
+*5/1/2024*  
+* Added if statements to clarifying questions in order to set min/max limits to the user's answers.
+* Since random password can be generated, will call this program complete...for now.
+
 **Version 0.4**  
 *4/30/2024*  
 * Cleaned up for loops that are for the random characters.
